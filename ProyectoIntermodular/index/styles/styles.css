@@ -295,12 +295,13 @@ header {
   display: flex;
   gap: 15px;
   margin-top: 10px;
+  align-items: center;
 }
 
-.footer__social a {
-  font-weight: bold;
-  color: var(--white);
-  font-size: 1.1rem;
+.footer__social img {
+  width: 34px;
+  height: 30px;
+  filter: brightness(200%);
 }
 
 .footer__bottom {
