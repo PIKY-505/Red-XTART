@@ -304,6 +304,18 @@ header {
   filter: brightness(200%);
 }
 
+.partner-logos {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.partner-logo img {
+  height: 40px;
+  width: auto;
+  display: block;
+}
+
 .footer__bottom {
   display: flex;
   justify-content: space-between;
