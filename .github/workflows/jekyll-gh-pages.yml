@@ -33,8 +33,11 @@ jobs:
       - name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1
         with:
-          # ¡CORRECCIÓN CLAVE! 'source' debe ser el directorio (carpeta) raíz del proyecto Jekyll, no un archivo.
-          source: ./ProyectoIntermodular/index/html
+          # CORRECCIÓN:
+          # Cambiamos el source a './ProyectoIntermodular/index'.
+          # Al hacerlo así, Jekyll verá tanto la carpeta 'html' como la carpeta 'styles'.
+          # Si lo dejábamos en '.../html', la carpeta de estilos quedaba excluida del sitio final.
+          source: ./ProyectoIntermodular/index
           destination: ./_site
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
