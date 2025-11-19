@@ -33,7 +33,8 @@ jobs:
       - name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1
         with:
-          source: ./ProyectoIntermodular/index/html/index.html
+          # ¡CORRECCIÓN CLAVE! 'source' debe ser el directorio (carpeta) raíz del proyecto Jekyll, no un archivo.
+          source: ./ProyectoIntermodular/index/html
           destination: ./_site
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
