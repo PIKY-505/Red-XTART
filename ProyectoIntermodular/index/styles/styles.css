@@ -9,6 +9,10 @@
 }
 
 /* Global */
+.icon_page {
+  border-radius: 50px;
+}
+
 body {
   margin: 0;
   font-family: "Segoe UI", sans-serif;
@@ -23,6 +27,11 @@ a {
 ul {
   list-style: none;
   padding: 0;
+}
+
+ul li {
+  font-size: 20px;
+  font-weight: 500;
 }
 
 /* Header */
@@ -200,6 +209,23 @@ ul {
   border-radius: 10px;
 }
 
+.map {
+  position: relative;
+  text-align: right;
+  width: 350px;
+  height: 350px;
+}
+.map_container {
+  overflow: hidden;
+  background: none !important;
+  width: 350px;
+  height: 350px;
+}
+.map_frame {
+  width: 350px !important;
+  height: 350px !important;
+}
+
 /* Ciclos */
 .ciclos {
   margin-top: 60px;
@@ -221,12 +247,91 @@ ul {
   color: var(--secondary);
 }
 
-.ciclos__img {
-  width: 100%;
-  border-radius: 10px;
+/* Grid Ciclos */
+.ciclos-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 45px;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px;
+  justify-content: center;
 }
 
-/* Grid Ciclos */
+.ciclos-grid {
+  background-color: var(--white);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  min-height: 600px;
+  padding-bottom: 30px;
+}
+
+.ciclos-grid:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+.ciclos-grid:hover img {
+  transform: scale(1.1);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.ciclos-grid img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  align-self: flex-start;
+}
+
+.ciclos__subtittle_1 {
+  margin: 15px 0 5px;
+  font-size: 1.4rem;
+  color: var(--dark);
+  padding: 20px;
+  text-align: center;
+}
+
+.ciclos__subtittle_2 {
+  margin: 15px 0 5px;
+  font-size: 1.4rem;
+  color: var(--dark);
+  padding: 20px;
+  width: 200px;
+  height: 30px;
+  text-align: center;
+}
+
+.ciclos-grid p {
+  margin: 0 0 10px;
+  font-size: 1.2rem;
+  color: var(--dark);
+  padding: 20px;
+}
+
+.boton-info {
+  display: inline-block;
+  background-color: var(--secondary);
+  color: var(--white);
+  padding: 12px 30px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  margin-top: auto;
+  margin-bottom: 20px;
+}
+
+.boton-info:hover {
+  background-color: var(--primary);
+  transform: translateY(-3px);
+}
 
 /* --------- Footer --------- */
 .footer {
