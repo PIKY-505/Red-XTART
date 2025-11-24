@@ -10,7 +10,7 @@
 
 /* Global */
 .icon_page {
-  border-radius: 50px;
+  border-radius: 50%;
 }
 
 body {
@@ -107,11 +107,74 @@ ul li {
   color: var(--secondary);
 }
 
-/* Main */
+/* --------- Main --------- */
 .main {
   max-width: 1100px;
   margin: 140px auto 50px;
   padding: 20px;
+}
+
+/* --------- Main Agrandado --------- */
+.main__expanded {
+  max-width: 60%;
+  margin: 140px auto 50px;
+  padding: 20px;
+}
+
+/* --------- Hero Modificado --------- */
+.hero__larger {
+  display: grid;
+  gap: 40px;
+  grid-template-columns: 1fr 1.2fr;
+  background: var(--white);
+  padding: 40px;
+  border-radius: 15px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.hero__reverse {
+  text-align: right;
+  grid-template-columns: 1.2fr 1fr;
+}
+
+.hero__reverse .map {
+  margin-left: auto;
+}
+
+.hero__reverse .hero__content {
+  order: 2;
+}
+
+.hero__reverse .hero__media {
+  order: 1;
+}
+
+.hero__large-display:hover {
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transform: scale(1.01);
+  transition: transform 0.3s;
+}
+
+.hero__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero__media {
+  width: 100%;
+  height: 100%;
+  min-height: 450px;
+  display: flex;
+}
+
+.hero__img__cover {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  display: block;
 }
 
 /* Hero */
@@ -190,7 +253,6 @@ ul li {
   grid-template-columns: 1fr 1fr;
   gap: 40px;
   background: var(--white);
-  padding: 40px;
   border-radius: 12px;
 }
 
@@ -228,13 +290,20 @@ ul li {
 
 /* Ciclos */
 .ciclos {
-  margin-top: 60px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 40px;
   background: var(--white);
   padding: 40px;
   border-radius: 12px;
+}
+
+.ciclos__img {
+  width: 1000px;
+  height: 500px;
+  padding: 10px;
+  justify-content: center;
+  border-radius: 2dvh;
 }
 
 .ciclos:hover {
@@ -245,6 +314,11 @@ ul li {
 
 .ciclos__title {
   color: var(--secondary);
+}
+
+.ciclos__tittle_2 {
+  color: var(--dark);
+  padding-top: 60px;
 }
 
 /* Grid Ciclos */
@@ -273,19 +347,19 @@ ul li {
   padding-bottom: 30px;
 }
 
+.ciclos-grid__tittle {
+  color: var(--dark);
+  font-size: 20px;
+}
+
 .ciclos-grid:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
 }
 
-.ciclos-grid:hover img {
-  transform: scale(1.1);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-}
-
 .ciclos-grid img {
   width: 100%;
-  height: 200px;
+  height: 100px;
   object-fit: cover;
   align-self: flex-start;
 }
