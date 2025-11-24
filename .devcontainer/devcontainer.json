@@ -1,5 +1,18 @@
 {
+  "name": "RED",
   "image": "mcr.microsoft.com/devcontainers/universal:2",
-  "ghcr.io/devcontainers-extra/features/live-server:1": {}
-  "features": {}
+
+  "features": {
+    "ghcr.io/devcontainers-extra/features/live-server:1": {}
+  },
+
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-vscode.live-server",
+        "esbenp.prettier-vscode",
+        "dbaeumer.vscode-eslint"
+      ]
+    }
+  }
 }
