@@ -1,0 +1,16 @@
+{
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "remote.downloadExtensionsLocally": true,
+  "remote.defaultExtensionsIfInstalledLocally": [
+    "GitHub.copilot",
+    "GitHub.copilot-chat",
+    "GitHub.vscode-pull-request-github",
+    "ritwickdey.LiveServer",
+    "esbenp.prettier-vscode"
+  ],
+  "github.codespaces.defaultExtensions": [
+    "GitHub.codespaces",
+    "GitHub.vscode-pull-request-github",
+    "Github.copilot"
+  ]
+}
