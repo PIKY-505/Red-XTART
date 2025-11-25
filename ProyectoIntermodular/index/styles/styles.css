@@ -177,10 +177,10 @@ ul li {
   display: block;
 }
 
-/* Hero */
+/* --------- Hero --------- */
 .hero {
   display: grid;
-  gap: 40px;
+  gap: 0px;
   grid-template-columns: 1fr 1fr;
   background: var(--white);
   padding: 40px;
@@ -211,7 +211,7 @@ ul li {
   border-radius: 10px;
 }
 
-/* Grid */
+/* --------- Grid --------- */
 .info-grid {
   margin-top: 60px;
   display: grid;
@@ -246,7 +246,7 @@ ul li {
   color: var(--primary);
 }
 
-/* Campus */
+/* --------- Campus --------- */
 .campus {
   padding: 50px;
   margin-top: 60px;
@@ -289,7 +289,7 @@ ul li {
   height: 350px !important;
 }
 
-/* Ciclos */
+/* --------- Ciclos --------- */
 .ciclos {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -322,7 +322,7 @@ ul li {
   padding-top: 60px;
 }
 
-/* Grid Ciclos */
+/* --------- Grid Ciclos --------- */
 .ciclos-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
