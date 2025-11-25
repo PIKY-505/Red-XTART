@@ -248,6 +248,7 @@ ul li {
 
 /* Campus */
 .campus {
+  padding: 50px;
   margin-top: 60px;
   display: grid;
   grid-template-columns: 1fr 1fr;
