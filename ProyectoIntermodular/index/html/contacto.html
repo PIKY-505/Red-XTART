@@ -35,6 +35,73 @@
 
     <!-- --------- Inicio Formulario --------- -->
 
+    <section class="form">
+      <div class="form__head">
+        <div id="form__head__text">
+          <h2>¿Dudas? No te las guardes, pregúntanos.</h2>
+          <p>Todos los campos son obligatorios</p>
+        </div>
+        <div class="form__head__img">
+          <img
+            src="https://www.xtart.com/assets/xtart/img/Xtart_X_degradado_Artboard.png"
+            alt="" />
+        </div>
+      </div>
+      <form>
+        <div class="form__body">
+          <div class="form__field">
+            <label for="nombre">Nombre</label>
+            <input id="nombre" type="text" placeholder="Escribe tu nombre" />
+          </div>
+
+          <div class="form__field">
+            <label for="apellidos">Apellidos</label>
+            <input
+              id="apellidos"
+              type="text"
+              placeholder="Escribe tus apellidos" />
+          </div>
+
+          <div class="form__field">
+            <label for="telefono">Teléfono</label>
+            <div class="phone-group">
+              <span class="phone-code">+34</span>
+              <input id="telefono" type="tel" placeholder="Teléfono" />
+            </div>
+          </div>
+
+          <div class="form__field">
+            <label for="codigo">Código postal</label>
+            <input id="codigo" type="text" placeholder="Código postal" />
+          </div>
+
+          <div class="form__field">
+            <label for="email">Email</label>
+            <input id="email" type="email" placeholder="Escribe tu email" />
+          </div>
+
+          <div class="form__field">
+            <label for="modalidad">Modalidad</label>
+            <select id="modalidad">
+              <option value="">Selecciona una opción</option>
+              <option>Presencial</option>
+              <option>Semipresencial</option>
+              <option>A distancia</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form__actions">
+          <label class="checkbox">
+            <input type="checkbox" />
+            He leído y acepto la <a href="#">Política de Privacidad</a>
+          </label>
+          <button type="submit" class="btn-submit">
+            Solicitar información
+          </button>
+        </div>
+      </form>
+    </section>
     <!-- --------- Fin Formulario --------- -->
 
     <!-- --------- Footer --------- -->
