@@ -69,6 +69,13 @@ ul li {
   color: var(--white);
 }
 
+.header__cta__form {
+  background: var(--white);
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: var(--white);
+}
+
 .nav__list {
   margin-bottom: 5px;
   display: flex;
@@ -426,7 +433,7 @@ ul li {
 /* #region --------- Formulario --------- */
 .form {
   width: 1000px;
-  margin: 200px auto 100px;
+  margin: 150px auto 100px;
   background: var(--white);
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
   overflow: hidden;
@@ -463,7 +470,6 @@ ul li {
 .form__field label {
   display: block;
   margin-bottom: 8px;
-  font-size: 0.95rem;
   color: var(--dark);
 }
 
@@ -474,8 +480,7 @@ ul li {
   padding: 10px 12px;
   border: 1px solid var(--gray);
   border-radius: 6px;
-  background: #fff;
-  font-size: 0.95rem;
+  background: var(--white);
   color: var(--dark);
 }
 
@@ -504,15 +509,18 @@ ul li {
   display: flex;
   align-items: center;
   gap: 8px;
-  font-size: 0.95rem;
 }
 
-.btn-submit {
+.form__politica {
+  font-weight: 600;
+  text-decoration: underline;
+}
+.boton-submit {
   background: #000;
   color: var(--white);
   padding: 12px 28px;
   border-radius: 8px;
-  border: none;
+  border: 0px;
   cursor: pointer;
 }
 
