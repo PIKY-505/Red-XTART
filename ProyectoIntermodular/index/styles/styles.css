@@ -484,6 +484,22 @@ ul li {
   color: var(--dark);
 }
 
+.form__field textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px 12px;
+  border: 1px solid var(--gray);
+  border-radius: 6px;
+  background: var(--white);
+  color: var(--dark);
+  font-family: "Segoe UI", sans-serif;
+  resize: vertical;
+}
+
+.form__field--full {
+  grid-column: 1 / -1;
+}
+
 .phone-group {
   display: flex;
   gap: 10px;
